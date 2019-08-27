@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--WORK IN PROGRESS-->
+
+<GridPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.csci360.electionapp.view.MenuController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+         <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" styleClass="footer" GridPane.valignment="BOTTOM">
+            <children>
+                <Label alignment="CENTER" prefHeight="30.0" prefWidth="1280.0" text="Made by Austin Purtell, David Rust, Jesse Deacon, and Evan Tanner" textAlignment="CENTER" textFill="#000000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+         </AnchorPane>
+      <AnchorPane>
+         <children>
+               <ImageView fitHeight="221.0" fitWidth="273.0" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="100">
+                  <image>
+                      <Image url="@assets/SC.png" />
+                  </image>
+               </ImageView>
+         </children>
+      </AnchorPane>
+      <GridPane alignment="CENTER" prefHeight="577.0" prefWidth="1280.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="ALWAYS" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="0.0" prefHeight="10.0" vgrow="ALWAYS" />
+          <RowConstraints maxHeight="220.0" minHeight="100.0" vgrow="ALWAYS" />
+            <RowConstraints percentHeight="15.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="100.0" percentHeight="15.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="0.0" vgrow="ALWAYS" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="TOP" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+                <Text fill="WHITE" text="Elects Bot 360" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                    <font>
+                  <Font name="MS Gothic" size="36.0" />
+                    </font>
+                </Text>
+                <ImageView fitHeight="200.0" fitWidth="200.0" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                   <image>
+                       <Image url="@assets/boticon.png" />
+                   </image>
+                </ImageView>
+             <Button mnemonicParsing="false" onAction="#goRegister" prefHeight="63.0" prefWidth="247.0" styleClass="button1" text="Register" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                  <font>
+                     <Font name="Open Sans" size="26.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+             <Button mnemonicParsing="false" onAction="#goLogin" prefHeight="63.0" prefWidth="247.0" styleClass="button1" text="Log In" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <font>
+                     <Font name="Open Sans" size="26.0" />
+                  </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+             </Button>
+         </children>
+      </GridPane>
+      <Button alignment="BOTTOM_RIGHT" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#fullScreen" styleClass="button2" text="..." GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+
+          <GridPane.margin>
+            <Insets bottom="2.0" right="4.0" />
+         </GridPane.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <MenuBar GridPane.valignment="TOP">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem onAction="#exit" mnemonicParsing="false" text="Quit Program" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</GridPane>

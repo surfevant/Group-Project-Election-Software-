@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electionapp.view.voteController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <AnchorPane maxHeight="30.0" minHeight="30.0" prefHeight="30.0" styleClass="footer" GridPane.valignment="BOTTOM">
+            <children>
+                <Label alignment="CENTER" prefHeight="30.0" prefWidth="1280.0" text="Made by Austin Purtell, David Rust, Jesse Deacon, and Evan Tanner" textAlignment="CENTER" textFill="#000000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane>
+            <children>
+                <ImageView fitHeight="221.0" fitWidth="273.0" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="100">
+                    <image>
+                        <Image url="@../assets/SC.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Button alignment="BOTTOM_RIGHT" maxHeight="26.0" maxWidth="26.0" minHeight="26.0" minWidth="26.0" mnemonicParsing="false" onAction="#fullScreen" styleClass="fullscreenButton" text="..." GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+
+            <GridPane.margin>
+                <Insets bottom="2.0" right="4.0" />
+            </GridPane.margin>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <MenuBar GridPane.valignment="TOP">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Quit Program" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <GridPane>
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="211.0" minHeight="10.0" percentHeight="20.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="212.0" minHeight="10.0" percentHeight="20.0" prefHeight="212.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="10.0" prefWidth="30.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            <GridPane prefHeight="144.0" prefWidth="677.0" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="2">
+              <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="591.0" minWidth="10.0" prefWidth="420.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="420.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="501.0" minWidth="10.0" prefWidth="420.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="161.0" minHeight="42.0" prefHeight="42.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="336.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+                  <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="42.0" vgrow="NEVER" />
+              </rowConstraints>
+               <padding>
+                  <Insets left="150.0" />
+               </padding>
+               <children>
+                  <Label text="Senator" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                  <CheckBox fx:id="Sen2" mnemonicParsing="false" text="Kratos (Sony Party)" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Rep1" mnemonicParsing="false" text="Link (Nintendo Party)" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Sen1" mnemonicParsing="false" text="Mario (Nintendo Party)" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Rep2" mnemonicParsing="false" text="Nathan Drake (Sony Party)" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Clerk1" mnemonicParsing="false" text="Donkey Kong (Nintendo Party)" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Clerk2" mnemonicParsing="false" text="Crash Bandicoot (Sony Party)" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="2">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Sen3" mnemonicParsing="false" text="Sonic (Sega Party)" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Clerk3" mnemonicParsing="false" text="Knuckles (Sega Party)" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Rep3" mnemonicParsing="false" text="Tails (Sega Party)" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Clerk4" mnemonicParsing="false" text="Cortana (Microsoft Party)" GridPane.columnIndex="5" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Rep4" mnemonicParsing="false" text="Marcus Fenix (Microsoft Party)" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <CheckBox fx:id="Sen4" mnemonicParsing="false" text="Master Chief (Microsoft Party)" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding></CheckBox>
+                  <Label text="Representative" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                  <Label text="County Clerk" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                  <Button fx:id="Submit" mnemonicParsing="false" onAction="#vote" text="Submit Ballot" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                  <Label id="SenatorLabel" alignment="CENTER" contentDisplay="CENTER" text="Select only one." textAlignment="CENTER" visible="false" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                  <Label id="RepLabel" alignment="CENTER" contentDisplay="CENTER" text="Select only one." textAlignment="CENTER" visible="false" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                  <Label id="ClerkLabel" alignment="CENTER" contentDisplay="CENTER" text="Select only one." textAlignment="CENTER" visible="false" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                  <CheckBox fx:id="NoSen" mnemonicParsing="false" text="No Selection (Abstain)" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="NoRep" mnemonicParsing="false" text="No Selection (Abstain)" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </CheckBox>
+                  <CheckBox fx:id="NoClerk" mnemonicParsing="false" text="No Selection (Abstain)" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </CheckBox>
+               </children>
+            </GridPane>
+            </children>
+        </GridPane>
+      <Button fx:id="back" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Back">
+         <GridPane.margin>
+            <Insets left="42.0" top="576.0" />
+         </GridPane.margin>
+      </Button>
+    </children>
+</GridPane>

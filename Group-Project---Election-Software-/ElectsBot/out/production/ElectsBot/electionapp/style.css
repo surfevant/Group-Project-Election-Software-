@@ -1,0 +1,58 @@
+.root{
+    -fx-background-color: #9494c4;
+    -fx-hover-base: #ffffff;
+    -fx-control-inner-background: #d4d4f4;
+    -fx-accent: #d4d4f4;
+    -fx-base: #d4d4f4;
+    -border: transparent;
+    -shadow: transparent;
+    -fx-box-border: transparent;
+    -fx-text-box-border: transparent;
+    -fx-shadow-highlight-color: transparent;
+}
+
+.submitButton{
+    -fx-background-color: #d4d4f4;
+}
+
+.submitButton:hover{
+    -fx-background-color: #c4c4e4;
+}
+
+.fullscreenButton{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/assets/fullscreen.png")
+}
+
+.fullscreenButton:hover{
+    -fx-background-color: #cccccc;
+}
+
+.footer{
+    -fx-background-color: #ffffff;
+}
+
+.menu-bar{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.menu-bar:hover{
+    -fx-background-color: #9494c4;
+
+}
+.menu-item:hover{
+    -fx-background-color: transparent;
+    -fx-hover-base: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused .label{
+    -fx-text-fill: #ffffff;
+}
+
+.input {
+    -fx-border-style: solid;
+    -fx-background-color: transparent;
+    -fx-border-width: 0 2 0 0;
+    -fx-border-color: #ffffff;
+}
